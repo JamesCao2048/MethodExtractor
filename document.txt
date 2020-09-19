@@ -11,3 +11,9 @@
 - 识别每个commit改动了哪些方法，建立Map<Method, LastModifyCommit>
 - 对最新代码库有的Method: 通过查上面map得到其对应的被修改时间，然后两两配对相加算出分母。
 最后两两配对算出分子。
+
+1. 多线程计算tomcat并计时 (项目名用命令行参数传入)
+2. 上传到服务器并成功运行
+3. 通过测量的时间判断是否需要对birt计算做过滤处理
+
+git log --pretty=format:"%h %ad" --date=format:'%Y-%m-%d %H:%M:%S' >> /Users/junming/code/LocalMethodLevelData/src/main/resources/swt_commit.txt
